@@ -8,7 +8,7 @@ const gulp    = require('gulp'),
       plumber = require('gulp-plumber');
 
 /**
- * Creating build task
+ * Creating build the task
  */
 gulp.task('sass', function() {
 
@@ -19,12 +19,12 @@ gulp.task('sass', function() {
   gulp.src('scss/main.scss')
 
       /**
-       * If error, write to console message and continue
+       * If the error, write a message to the console and continues to work
        */
       .pipe(plumber({ errorHandler: function(error) {
 
         /**
-         * Use system notify center for showing error message
+         * Using system notify center for showing error message
          */
         notify.onError({
           title: 'Gulp error in ' + error.plugin,
@@ -33,13 +33,13 @@ gulp.task('sass', function() {
 
 
         /**
-         * Use system sound
+         * Using system sounds
          */
         util.beep();
       }}))
 
       /**
-       * Compile source and minify output
+       * Compiling source and minify output
        */
       .pipe(sass({outputStyle: 'compressed'}))
 
@@ -50,7 +50,7 @@ gulp.task('sass', function() {
 });
 
 /**
- * Creating watch task
+ * Creating watch the task
  */
  gulp.task('watch', ['sass'], function() {
   gulp.watch('scss/**/*.scss', ['sass']);
