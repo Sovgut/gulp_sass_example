@@ -3,7 +3,7 @@
  */
 const gulp    = require('gulp'),
       sass    = require('gulp-sass'),
-      util    = require('gulp-util')
+      util    = require('gulp-util'),
       notify  = require('gulp-notify'),
       plumber = require('gulp-plumber');
 
