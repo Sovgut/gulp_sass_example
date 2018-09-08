@@ -2,7 +2,7 @@
 
 Все настройки gulp с комментариями для удобства в редактировании настроек
 
-![notification center](https://github.com/a.png "Использует центр уведомлений операционой системы")
+![notification center](https://github.com/Sovgut/gulp_sass_example/blob/master/other/Notify.png "Использует центр уведомлений операционой системы")
 
 # Как установить
 ```
