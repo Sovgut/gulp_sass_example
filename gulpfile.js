@@ -7,6 +7,20 @@ const gulp    = require('gulp'),
       notify  = require('gulp-notify'),
       plumber = require('gulp-plumber');
 
+
+/**
+ * Source scss files
+ */
+// Main file. Use * .scss to compile everything into different files and not into one 
+const sassPath  = 'scss/main.scss';
+// Watching all the files in the folder scss/
+const sassWatch = 'scss/**/*.scss';
+
+/**
+ * Output css files
+ */
+const cssPath   = 'css/';
+
 /**
  * Creating build the task
  */
@@ -16,7 +30,7 @@ gulp.task('sass', function() {
    * Source path
    * 'scss/*.scss' or 'scss/main.scss'
    */
-  gulp.src('scss/main.scss')
+  gulp.src(sassPath)
 
       /**
        * If the error, write a message to the console and continues to work
@@ -46,12 +60,12 @@ gulp.task('sass', function() {
       /**
        * Destination path
        */
-      .pipe(gulp.dest('css/'));
+      .pipe(gulp.dest(cssPath));
 });
 
 /**
  * Creating watch the task
  */
  gulp.task('watch', ['sass'], function() {
-  gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch(sassWatch, ['sass']);
  });
