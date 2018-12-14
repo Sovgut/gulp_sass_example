@@ -1,10 +1,6 @@
 # Gulp Sass Example
 
 > Все настройки gulp с комментариями для удобства в редактировании настроек
-![Comments](https://github.com/Sovgut/gulp_sass_example/blob/master/other/CodeReview.png "Комментарии")
-
-> Использует центр уведомления операционой системы и системные звуки
-![Notification center](https://github.com/Sovgut/gulp_sass_example/blob/master/other/Notify.png "Использует центр уведомлений операционой системы")
 
 # Как установить
 ```
