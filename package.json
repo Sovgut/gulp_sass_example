@@ -1,14 +1,14 @@
 {
-  "name": "scss-task",
+  "name": "gulp-scss",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "Boilerplate gulp scss",
+  "private": false,
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
+    "gulp": "^4.0.0",
     "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
     "gulp-util": "^3.0.8"
   },
   "scripts": {
@@ -19,5 +19,5 @@
     "url": "https://github.com/Sovgut/gulp_sass_example"
   },
   "author": "Sovgut Sergey",
-  "license": "ISC"
+  "license": "MIT"
 }
